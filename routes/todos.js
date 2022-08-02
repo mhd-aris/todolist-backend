@@ -81,7 +81,7 @@ routes.patch("/:id", async (req, res) => {
   const { id } = req.params;
   const [setFinished] = await Todos.update(
     {
-      finisshed: true,
+      finished: true,
     },
     {
       where: {
